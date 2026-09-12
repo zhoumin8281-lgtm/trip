@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>关于本站 · Trip 旅行指南</title>
+  <meta name="description" content="Trip 旅行指南是一个展示中国十大热门景点攻略的静态演示站点。" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container inner">
+      <a class="brand" href="index.html"><span class="logo">旅</span><span>Trip 旅行指南<small>中国十大景点</small></span></a>
+      <nav class="nav-links"><a href="index.html#list">景点列表</a><a href="about.html">关于</a></nav>
+    </div>
+  </header>
+
+  <section class="detail-hero" style="background:linear-gradient(135deg,#1E6F5C,#2c8a72)">
+    <div class="container">
+      <div class="emoji">🧭</div>
+      <h1>关于本站</h1>
+      <div class="tagline">一份轻量、可读、可直接照着玩的中国景点攻略</div>
+    </div>
+  </section>
+
+  <div class="container detail-layout">
+    <aside class="toc"><h4>内容</h4><a href="#what">本站是什么</a><a href="#scope">覆盖范围</a><a href="#tech">技术说明</a><a href="#note">免责声明</a></aside>
+    <div>
+      <section class="module" id="what"><h2>本站是什么</h2><p>Trip 旅行指南是一个展示「中国十大热门旅行景点」详细攻略的静态演示网站。每个景点提供 11 个结构化模块：概览、最佳旅行时间、交通、门票、路线、亮点、美食、住宿、避坑、贴士与相关推荐，帮助你快速规划自由行。</p></section>
+      <section class="module" id="scope"><h2>覆盖范围</h2><p>收录长城、故宫、西湖、张家界、九寨沟、桂林山水、黄山、泰山、丽江古城、秦始皇兵马俑共 10 个景点，覆盖华北、华东、华中、华南、西南、西北六大区域。</p></section>
+      <section class="module" id="tech"><h2>技术说明</h2><p>网站为纯静态 HTML/CSS/JS，托管于 GitHub Pages，零后端、零依赖。景点内容集中在 <code>assets/js/data.js</code>（并同步导出 <code>data/attractions.json</code>），改一处即可全站生效。</p></section>
+      <section class="module" id="note"><h2>免责声明</h2><p>本站内容为演示性质的结构化攻略，门票、交通、开放时间等信息会随季节与政策变动，出行前请务必以景区官方公告与实时信息为准。封面采用渐变占位，正式上线时可替换为授权图片。</p></section>
+      <p style="margin-top:30px"><a class="btn btn-primary" href="index.html#list">浏览景点 →</a></p>
+    </div>
+  </div>
+
+  <footer class="footer"><div class="container"><div>Trip 旅行指南 · 中国十大热门景点攻略（静态演示站）</div><div>内容仅供参考，出行前请以官方公告与实时信息为准</div></div></footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
