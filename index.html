@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>中国 10 大热门旅行景点攻略 ·  Trip 旅行指南</title>
+  <meta name="description" content="精选中国十大热门旅行景点，提供交通、门票、最佳季节、游玩路线、美食住宿与避坑贴士一站式攻略，自由行照着玩。" />
+  <meta property="og:title" content="中国 10 大热门旅行景点攻略" />
+  <meta property="og:description" content="十大景点结构化攻略，覆盖交通/门票/路线/美食/避坑，移动端友好。" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- 顶部导航 -->
+  <header class="topbar">
+    <div class="container inner">
+      <a class="brand" href="index.html">
+        <span class="logo">旅</span>
+        <span>Trip 旅行指南<small>中国十大景点</small></span>
+      </a>
+      <nav class="nav-links">
+        <a href="#list">景点列表</a>
+        <a href="about.html">关于</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>中国十大热门旅行景点攻略</h1>
+      <p>从长城到兵马俑，一篇搞定交通、门票、最佳季节、游玩路线、美食住宿与避坑贴士。照着玩，不踩雷。</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#list">开始浏览 →</a>
+        <a class="btn btn-ghost" href="about.html">了解本站</a>
+      </div>
+      <div class="hero-stats">
+        <div><span class="n">10</span><span class="l">精选景点</span></div>
+        <div><span class="n">6</span><span class="l">覆盖地区</span></div>
+        <div><span class="n">11</span><span class="l">攻略模块 / 景点</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 列表 + 筛选 -->
+  <main class="container" id="list">
+    <div class="toolbar">
+      <label class="search">
+        <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 5 1.5-1.5-5-5zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14z"/></svg>
+        <input id="searchInput" type="text" placeholder="搜索景点名、标签或地区，如「黄山」「云海」" />
+      </label>
+      <div class="chips" id="regionChips"></div>
+      <div class="chips" id="seasonChips"></div>
+    </div>
+
+    <div class="section-title">
+      <h2>热门景点</h2>
+      <span class="sub" id="countTip">共 10 个</span>
+    </div>
+    <div class="grid" id="grid"></div>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <div>Trip 旅行指南 · 中国十大热门景点攻略（静态演示站）</div>
+      <div>内容仅供参考，出行前请以官方公告与实时信息为准 · <a href="about.html">关于本站</a></div>
+    </div>
+  </footer>
+
+  <button class="totop" id="totop" aria-label="返回顶部">↑</button>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
