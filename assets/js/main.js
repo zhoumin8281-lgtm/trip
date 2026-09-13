@@ -158,7 +158,7 @@
     ];
 
     var html =
-      '<section class="detail-hero" style="background:' + a.hero + '">' +
+      '<section class="detail-hero" style="' + bgStyle(a.hero, a.image) + '">' +
         '<div class="container">' +
           '<a class="back" href="index.html#list">← 返回列表</a>' +
           '<div class="emoji">' + a.emoji + "</div>" +
