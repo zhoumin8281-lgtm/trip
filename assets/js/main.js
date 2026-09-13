@@ -26,6 +26,14 @@
     });
   }
 
+  // 背景样式：优先真实照片，hero 渐变作为回退底色
+  function bgStyle(hero, image) {
+    if (image) {
+      return "background:" + hero + ";background-image:url('" + image + "');background-size:cover;background-position:center";
+    }
+    return "background:" + hero;
+  }
+
   /* ---------------- 列表页 ---------------- */
   function renderIndex() {
     var grid = document.getElementById("grid");
