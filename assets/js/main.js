@@ -88,7 +88,7 @@
       var fav = isFav(a.id);
       return (
         '<article class="card" data-id="' + a.id + '">' +
-          '<div class="cover" style="background:' + a.hero + '">' +
+          '<div class="cover" style="' + bgStyle(a.hero, a.image) + '">' +
             '<span class="region">' + esc(a.region) + " · " + esc(a.city) + "</span>" +
             '<button class="fav' + (fav ? " on" : "") + '" data-fav="' + a.id + '" aria-label="收藏">' + (fav ? "★" : "☆") + "</button>" +
             '<span class="emoji">' + a.emoji + "</span>" +
@@ -153,7 +153,7 @@
         var r = (window.ATTRACTIONS || []).filter(function (x) { return x.id === rid; })[0];
         if (!r) return "";
         return '<article class="card" data-id="' + r.id + '">' +
-          '<div class="cover" style="background:' + r.hero + '"><span class="emoji">' + r.emoji + "</span></div>" +
+          '<div class="cover" style="' + bgStyle(r.hero, r.image) + '"><span class="emoji">' + r.emoji + "</span></div>" +
           '<div class="body"><h3>' + esc(r.name) + "</h3><div class=\"tag\">" + esc(r.tagline) + "</div></div></article>";
       }).join("");
     }
