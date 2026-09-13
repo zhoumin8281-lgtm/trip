@@ -126,7 +126,13 @@ img { max-width: 100%; display: block; }
 .card:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); }
 .card .cover {
   height: 150px; position: relative; display: grid; place-items: center; color: #fff;
+  background-size: cover; background-position: center;
 }
+.card .cover::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(180deg, rgba(0,0,0,.22) 0%, rgba(0,0,0,.40) 100%);
+}
+.card .cover > * { position: relative; z-index: 1; }
 .card .cover .emoji { font-size: 60px; filter: drop-shadow(0 4px 10px rgba(0,0,0,.25)); }
 .card .cover .region {
   position: absolute; top: 12px; left: 12px; background: rgba(0,0,0,.32);
