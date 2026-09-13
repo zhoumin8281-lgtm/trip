@@ -147,7 +147,13 @@ img { max-width: 100%; display: block; }
 /* ---------- 详情页 ---------- */
 .detail-hero {
   position: relative; color: #fff; padding: 84px 0 56px; overflow: hidden;
+  background-size: cover; background-position: center;
 }
+.detail-hero::before {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,.28) 0%, rgba(0,0,0,.52) 100%);
+}
+.detail-hero .container { position: relative; z-index: 1; }
 .detail-hero .emoji { font-size: 86px; filter: drop-shadow(0 6px 14px rgba(0,0,0,.3)); }
 .detail-hero h1 { font-family: var(--serif); font-size: 44px; margin: 10px 0 6px; letter-spacing: 2px; }
 .detail-hero .tagline { font-size: 18px; opacity: .92; }
